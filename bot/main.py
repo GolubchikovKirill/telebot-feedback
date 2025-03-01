@@ -1,12 +1,14 @@
 import os
 from abc import ABC, abstractmethod
-
-from dotenv import load_dotenv
+from collections import defaultdict
 from telebot import TeleBot
+from dotenv import load_dotenv
 from telebot.types import (
     ReplyKeyboardMarkup,
     Message,
-    CallbackQuery
+    CallbackQuery,
+    InlineKeyboardMarkup,
+    InlineKeyboardButton
 )
 
 from db.database import db
@@ -129,12 +131,6 @@ class FeedbackCallbackHandler(BotHandler):
                 "Отмена отправки сообщения",
                 reply_markup=FeedbackBot.markup_main()
             )
-
-
-import os
-from collections import defaultdict
-from telebot import TeleBot
-from telebot.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 
 
 class BotGame:

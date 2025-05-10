@@ -1,0 +1,21 @@
+[project]
+name = "telebot-feedback"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "certifi==2025.1.31",
+    "charset-normalizer==3.4.1",
+    "fastapi~=0.115.8",
+    "idna==3.10",
+    "psycopg2-binary==2.9.10",
+    "pydantic~=2.10.6",
+    "pytelegrambotapi==4.26.0",
+    "pytest~=8.3.4",
+    "python-dotenv==1.0.1",
+    "requests==2.32.3",
+    "sqlalchemy==2.0.38",
+    "typing-extensions==4.12.2",
+    "urllib3==2.3.0",
+    "uvicorn~=0.34.0",
+]
